@@ -3,14 +3,19 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="description" content="Google Calendar">
+		<meta name="description" content="Effortlessly organize your schedule and stay on top of your events with Google Calendar. Enjoy a user-friendly interface, smart reminders, shared calendars, and seamless collaboration.">
 		<meta name="author" content="Yvett Forrester">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:title" content="Google Calendar - Effortless Schedule Organization and Event Management">
+		<meta property="og:description" content="Effortlessly organize your schedule and stay on top of your events with Google Calendar. Enjoy a user-friendly interface, smart reminders, shared calendars, and seamless collaboration.">
+		<meta property="og:image" content="./images/phone.svg">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@googlecalendar">
 		<link rel="icon" type="image/x-icon" href="./images/logo.svg">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:wght@300;400;700;900">
-		 <link rel="stylesheet" href="css/style.css">
-		<title>Google Calendar</title>
-	</head>
+		<link rel="stylesheet" href="css/style.css">
+		<title>Google Calendar - Effortless Schedule Organization and Event Management</title>
+	  </head>
 	<body>
 		<header>
 			<div class="logo">
@@ -18,14 +23,14 @@
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#">Home</a></li>
+					<li><a href="#" aria-current="page">Home</a></li>
 					<li><a href="#">Features</a></li>
 					<li><a href="#">Integration</a></li>
 					<li><a href="#">Collaboration</a></li>
 					<li><a href="#">Access</a></li>
 				</ul>
 			</nav>
-			<div class="menu">
+			<div class="menu" role="button" aria-label="Toggle menu" tabindex="0">
 				<img src="./images/menu.png" alt="Hamburger menu icon">
 			</div>
 		</header>
@@ -37,7 +42,7 @@
 					<br>with Google Calendar</h1>
 					<p>Effortlessly organize your schedule and stay on top of your events.</p>
 				</div>
-				<img src="./images/phone.svg" alt="Mobile phone displaying Google Calendar">
+				<img src="./images/phone.svg" alt="A man pointing at a mobile phone displaying a calendar">
 			</section>
 			
 			<section class="features-section">
@@ -84,7 +89,7 @@
 						<h2>Collaboration</h2>
 						<p>Google Calendar enables seamless collaboration among team members. Share calendars with your colleagues, schedule meetings, and stay in sync with everyone's availability. With easy event invitations and responses, it's simple to coordinate and collaborate effectively.</p>
 					</div>
-					<img src="./images/collaboration.svg" alt="Collaboration illustration">
+					<img src="./images/collaboration.svg" alt="Two men shaking hands and standing in front of two puzzle pieces put together.">
 				</section>
 			</section>
 			
@@ -95,6 +100,28 @@
 					<a href="https://calendar.google.com/calendar/u/0/r"><button type="button">Try it Now</button></a>
 				</div>
 			</section>
+			<section class="form-section">
+				<h2>Contact Us</h2>
+				<form id="contact-form" action="#" method="post" role="form" aria-label="Contact Form">
+				  <div>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
+				  </div>
+				  <div>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
+				  </div>
+				  <div>
+					<label for="subject">Subject:</label>
+					<input type="text" id="subject" name="subject" required aria-required="true">
+				  </div>
+				  <div>
+					<label for="message">Message:</label>
+					<textarea id="message" name="message" required aria-required="true"></textarea>
+				  </div>
+				  <button type="submit">Submit</button>
+				</form>
+			  </section>			  
 		</main>
 		
 		<footer>
