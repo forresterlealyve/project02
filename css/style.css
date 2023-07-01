@@ -21,8 +21,8 @@ header {
 }
 
 .logo img {
-    max-width: 100%;
-    height: auto;
+    max-width: 50%;
+    max-height: 50%;
 }
 
 .logo h2 {
@@ -61,7 +61,7 @@ section {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 h2 {
@@ -84,14 +84,13 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .hero-section img {
     width: 80%;
     position: relative;
 }
-
-
 
 .features-section {
     display: flex;
@@ -183,7 +182,7 @@ button {
     padding: 20px 10px;
     color: white;
     border: none;
-    background: rgb(0, 119, 255);
+    background: #0028C7;
     transition: background 0.2s ease-in-out 0.12s,
                 color 0.3s ease-in-out 0.15s;
   }
@@ -216,14 +215,11 @@ footer {
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
-    .logo {
-        font-size: 20px;
-        font-weight: bold;
-        display: flex;
-        justify-content: space-between;
+    .logo img {
+        max-width: 15rem;
     }
 
     .menu {
@@ -291,6 +287,11 @@ footer {
         max-width: 10%;
         align-items: right;
         justify-content: right;
+    }
+
+    .logo img {
+        max-width: 15rem;
+        min-width: 12rem;
     }
 
     .hero-section {
