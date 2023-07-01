@@ -177,19 +177,79 @@ h1, h2, h3 {
 
 
 button {
-    width: 200px;
+
     margin: 20px auto;
-    padding: 20px 10px;
+    padding: 20px 40px;
+    background: #0028C7;
     color: white;
     border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s ease-in-out 0.12s,
+                color 0.3s ease-in-out 0.15s;
+
+  }
+  button:hover {
+    background: #9E0099;
+    color: white;
+    cursor: pointer;
+  }
+
+  .form-section {
+    margin: 50px auto;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .form-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .form-section input,
+  .form-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-section button {
+    margin: 20px auto;
+    padding: 20px 40px;
     background: #0028C7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
     transition: background 0.2s ease-in-out 0.12s,
                 color 0.3s ease-in-out 0.15s;
   }
-  button:hover {
-    background: rgb(200, 50, 255);
-    cursor: pointer;
+  
+  .form-section button:hover {
+    background-color: #45a049;
   }
+  
+  .form-section button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+  
 
 footer {
     padding: 20px;
@@ -334,4 +394,6 @@ footer {
         text-align: left;
         justify-content: left;
     }
+
+
 }
